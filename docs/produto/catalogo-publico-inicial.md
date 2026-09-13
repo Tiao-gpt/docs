@@ -1,576 +1,409 @@
-# Threeebs :3 — Catálogo Público Inicial
+# Threeebs :3 — Catálogo Público de Produtos
 
-> Documento público de produto — primeira versão  
-> Este arquivo apresenta a estrutura inicial de planos e ofertas da Threeebs sem fixar valores comerciais.
-
----
-
-# 1. Direção do catálogo
-
-O catálogo público da Threeebs deve explicar **o que cada plano entrega**, sem depender de preços fixos.
-
-A lógica é separar:
-
-```text
-CATÁLOGO
-=
-o que existe
-+
-para quem serve
-+
-o que inclui
-+
-como pode evoluir
-```
-
-de:
-
-```text
-PRECIFICAÇÃO
-=
-valor
-+
-condições
-+
-descontos
-+
-formas de pagamento
-+
-regras comerciais
-```
-
-Assim, a documentação pode permanecer estável mesmo quando os valores mudarem.
+> Documento público de produto  
+> Esta versão registra a linha atual de produtos da Threeebs sem fixar preços ou condições comerciais.
 
 ---
 
-# 2. Estrutura inicial
+## 1. Direção do catálogo
 
-Neste primeiro momento, a Threeebs trabalha com três níveis de oferta.
+A Threeebs organiza sua oferta por **soluções completas para necessidades reais**.
+
+O cliente não precisa contratar separadamente componentes como API, MCP, agentes, automações, autenticação ou infraestrutura. Esses elementos são combinados conforme o produto e o contexto do projeto.
 
 ```text
-PLANO 1
-Site estático simples
+Necessidade da empresa
         ↓
-PLANO 2
-Site estático mais completo
+Produto Threeebs
         ↓
-PLANO 3
-Projeto dinâmico / plataforma
+Componentes técnicos necessários
+        ↓
+Solução em operação
 ```
 
-Os nomes ainda são provisórios.
-
-A nomenclatura poderá ser refinada no futuro sem alterar a estrutura central do catálogo.
+O cliente compra o resultado. A arquitetura que sustenta esse resultado é definida pela Threeebs junto ao cliente.
 
 ---
 
-# 3. Plano 1 — Site estático simples
+## 2. Linha atual de produtos
 
-O primeiro plano funciona como uma porta de entrada.
+O catálogo público atual possui sete produtos:
 
-Ele é indicado para projetos que precisam colocar uma presença digital no ar de forma rápida, clara e funcional.
+1. **Desenvolvimento de websites**;
+2. **API com MCP**;
+3. **App/Plugin oficial ChatGPT**;
+4. **Extensão Navegador App**;
+5. **Threeebs AI Assistant**;
+6. **Threeebs AI Integration**;
+7. **Threeebs AI Dev**.
 
-## Escopo
+No Portal, os três primeiros aparecem em destaque. Os demais continuam disponíveis por meio da opção **Mostrar mais produtos**.
 
-Até:
+Essa ordem organiza a apresentação pública. Ela não representa uma escala obrigatória de contratação ou evolução.
 
-```text
-3 páginas estáticas
-```
+---
 
-O tema das páginas é flexível.
+## 3. Desenvolvimento de websites
 
-O plano não é limitado a um tipo específico de negócio.
+### Websites claros, responsivos e preparados para evoluir
 
-Exemplos possíveis:
+Produto destinado a empresas, profissionais e projetos que precisam estabelecer ou ampliar sua presença digital.
+
+### Possibilidades
 
 - página de apresentação;
-- link bio;
+- site institucional;
 - portfólio;
-- catálogo simples;
-- página de produto;
-- página de contato;
-- catálogo de veículos;
-- página de campanha;
-- presença institucional pequena.
+- catálogo;
+- landing page;
+- site com formulários;
+- site com conteúdo dinâmico;
+- portal com usuários, login ou painel.
 
-## Características
+### Sem banco de dados
+
+Quando o conteúdo é estático e não exige usuários, painel ou registros dinâmicos, o website pode funcionar sem banco de dados.
 
 ```text
-Até 3 páginas
-+
-HTML / CSS / JavaScript
-+
-layout personalizado
-+
-hospedagem Threeebs
-+
-endereço publicado
+Website estático
+      ↓
+Páginas e conteúdo
+      ↓
+Publicação
 ```
 
-## Não inclui como padrão
+### Com banco de dados
 
-- banco de dados;
-- sistema de login;
-- área restrita;
-- painel administrativo;
-- funcionalidades dinâmicas complexas;
-- automações avançadas.
+Quando o projeto precisa armazenar ou atualizar informações, o banco de dados pode fazer parte da solução.
 
-O objetivo é manter a entrega simples, rápida e evolutiva.
+```text
+Website dinâmico
+      ↓
+Banco de dados
+      ↓
+Usuários, conteúdo, painel ou processos
+```
+
+O banco de dados não é obrigatório em todo website. Sua inclusão depende da necessidade do projeto.
+
+### Componentes possíveis
+
+- layout personalizado;
+- desenvolvimento responsivo;
+- formulários;
+- banco de dados quando necessário;
+- autenticação e permissões;
+- painel;
+- hospedagem;
+- publicação;
+- acompanhamento e evolução.
+
+### Ideal para
+
+Quem precisa colocar uma presença digital no ar ou transformar um site simples em uma estrutura dinâmica sem recomeçar do zero.
 
 ---
 
-# 4. Plano 2 — Site estático completo
+## 4. API com MCP
 
-O segundo plano amplia a estrutura do primeiro.
+### Sistemas e dados preparados para agentes de inteligência artificial
 
-Ele é indicado para marcas e projetos que precisam de uma presença digital mais completa, com mais páginas e organização de conteúdo.
+Produto destinado a empresas que precisam expor operações dos seus sistemas de maneira controlada para agentes de IA compatíveis com MCP.
 
-## Escopo
+### Exemplos de uso
 
-Até:
+- consultar clientes, pedidos ou estoque;
+- buscar documentos;
+- gerar relatórios;
+- abrir chamados;
+- criar tarefas;
+- executar rotinas internas;
+- acionar automações.
 
-```text
-10 páginas estáticas
-```
-
-## Características
-
-```text
-Até 10 páginas
-+
-maior profundidade de conteúdo
-+
-navegação mais completa
-+
-layout personalizado
-+
-hospedagem Threeebs
-```
-
-## Formulários simples
-
-O plano pode incluir formulários básicos, como contato por e-mail.
-
-Exemplo:
+### Estrutura conceitual
 
 ```text
-Visitante
-   ↓
-Formulário
-   ↓
-Envio de mensagem
-   ↓
-E-mail
+Agente de IA
+     ↓
+    MCP
+     ↓
+Threeebs API
+     ↓
+Sistema da empresa
 ```
 
-A ideia é permitir comunicação simples sem transformar o plano em uma aplicação dinâmica.
+### Componentes possíveis
 
-## Não inclui como padrão
+- API de integração;
+- servidor MCP;
+- autenticação;
+- permissões;
+- ferramentas para agentes;
+- integração com sistemas existentes;
+- ambiente de testes;
+- documentação técnica;
+- logs e auditoria.
 
-- banco de dados;
+### Ideal para
+
+Empresas que desejam permitir que agentes de IA consultem dados ou executem ferramentas dos seus sistemas com autenticação, limites e controle.
+
+---
+
+## 5. App/Plugin oficial ChatGPT
+
+### Sua empresa trabalhando dentro do ChatGPT
+
+Produto destinado a empresas que querem disponibilizar dados, serviços e ações dos seus sistemas diretamente na experiência do ChatGPT.
+
+### Exemplos de uso
+
+- consultar informações da empresa;
+- gerar relatórios;
+- localizar documentos;
+- abrir chamados;
+- executar processos;
+- acionar integrações e automações.
+
+### Estrutura conceitual
+
+```text
+ChatGPT
+   ↓
+App/Plugin
+   ↓
+MCP + Threeebs API
+   ↓
+Sistema da empresa
+```
+
+### Componentes possíveis
+
+- integração com ChatGPT;
+- API;
+- servidor MCP;
+- autenticação e permissões;
+- ferramentas para agentes;
+- ambiente de testes;
+- documentação;
+- logs e auditoria.
+
+### Ideal para
+
+Empresas que desejam usar o ChatGPT como uma interface para seus próprios sistemas, respeitando as permissões e o contexto de cada operação.
+
+> A expressão “oficial ChatGPT” identifica o formato de app/plugin oferecido para uso na plataforma. Ela não representa, por si só, parceria, certificação ou endosso comercial da OpenAI.
+
+---
+
+## 6. Extensão Navegador App
+
+### Um painel da empresa dentro do navegador
+
+Extensão personalizada para navegadores baseados em Chromium, integrada ao fluxo de trabalho do usuário.
+
+### Recursos possíveis
+
 - login;
-- painel;
-- área restrita;
-- automações complexas;
-- integrações avançadas;
-- lógica de sistema.
+- painel lateral;
+- consulta de clientes e projetos;
+- documentos e atalhos;
+- notificações;
+- upload e preview de arquivos;
+- publicação;
+- ações administrativas;
+- integração com sistemas internos.
 
-A diferença principal em relação ao Plano 1 é profundidade e estrutura, não uma mudança completa de tecnologia.
-
----
-
-# 5. Plano 3 — Projeto dinâmico / plataforma
-
-O terceiro nível representa a evolução para sistemas mais completos.
-
-Ele é o plano mais alinhado à visão de longo prazo da Threeebs.
-
-## Base inicial
-
-Pode incluir:
+### Estrutura conceitual
 
 ```text
-Até 15 páginas
-+
-banco de dados
-+
-estrutura dinâmica
-+
-base para evolução
-```
-
-Mas esse plano não deve ser tratado como um pacote totalmente fechado.
-
-A partir do banco de dados, a complexidade pode variar bastante.
-
-Exemplos de possibilidades:
-
-```text
-Projeto
-│
-├── usuários
-├── login
-├── painel
-├── conteúdo dinâmico
-├── banco de dados
-├── área restrita
-├── integrações
-├── automações
-└── novas funcionalidades
-```
-
-## Modelo comercial
-
-O plano pode possuir:
-
-```text
-valor base
-+
-valor variável conforme escopo
-```
-
-A parte variável depende de fatores como:
-
-- complexidade;
-- funcionalidades;
-- integrações;
-- volume de dados;
-- necessidade de automação;
-- arquitetura;
-- nível de personalização.
-
-## Diagnóstico
-
-Projetos desse nível podem exigir um Diagnóstico Técnico-Estratégico antes da execução.
-
-```text
-Projeto dinâmico
-      ↓
-Diagnóstico
-      ↓
-Arquitetura
-      ↓
-Escopo
-      ↓
-Execução
-```
-
----
-
-# 6. Infraestrutura padrão
-
-A infraestrutura padrão dos planos utiliza a própria estrutura da Threeebs.
-
-Na maioria dos casos:
-
-```text
-Cliente
-  ↓
-Projeto
-  ↓
-Infraestrutura compartilhada Threeebs
-```
-
-Isso vale tanto para hospedagem quanto, quando aplicável, para banco de dados.
-
----
-
-# 7. Infraestrutura dedicada
-
-Alguns projetos podem precisar de infraestrutura própria.
-
-Exemplos:
-
-```text
-Servidor dedicado
-Banco dedicado
-Ambiente isolado
-Infraestrutura específica
-```
-
-Esses casos não precisam aparecer como escolha obrigatória no catálogo inicial.
-
-Eles entram conforme necessidade do projeto.
-
-```text
-Infraestrutura padrão
+Extensão do navegador
         ↓
-Projeto cresce
+Threeebs API
         ↓
-Nova necessidade
-        ↓
-Avaliação técnica
-        ↓
-Infraestrutura dedicada
+Sistema da empresa
 ```
 
-A infraestrutura dedicada pode alterar o valor final do projeto.
+O MCP é opcional. Ele pode ser incluído quando as mesmas funcionalidades também precisarem estar disponíveis para ChatGPT ou outros agentes de IA.
+
+### Ideal para
+
+Empresas que desejam levar seus sistemas e ferramentas para o navegador utilizado diariamente pela equipe.
 
 ---
 
-# 8. Hospedagem e continuidade
+## 7. Threeebs AI Assistant
 
-A hospedagem é parte importante dos planos.
+### Um assistente de IA próprio para a empresa
 
-A ideia é que o projeto possa permanecer ativo dentro da Threeebs mesmo depois da entrega inicial.
+Assistente personalizado para funcionários, clientes ou parceiros, conectado aos dados e processos autorizados da organização.
 
-```text
-Projeto criado
-    ↓
-Publicado
-    ↓
-Hospedado
-    ↓
-Mantido
-    ↓
-Pode evoluir
-```
+### Possíveis interfaces
 
-O encerramento do desenvolvimento não significa necessariamente o encerramento da hospedagem.
+- portal da empresa;
+- painel interno;
+- site;
+- extensão;
+- aplicativo;
+- sistema corporativo.
 
----
+### Componentes possíveis
 
-# 9. Períodos de contratação
+- agente de IA;
+- API;
+- autenticação;
+- base de conhecimento;
+- ferramentas;
+- histórico;
+- permissões;
+- integração com dados da empresa.
 
-Os planos podem trabalhar com períodos de contratação como:
+O MCP é opcional. Ele pode ser usado quando o assistente também precisar operar por meio de plataformas externas compatíveis.
 
-```text
-3 meses
-6 meses
-12 meses
-```
+### Ideal para
 
-A forma de pagamento pode variar entre pagamento total ou parcelamento.
-
-O período contratado não precisa alterar a essência técnica do plano.
+Empresas que desejam um copiloto ou agente próprio para trabalhar com seus dados, documentos e processos.
 
 ---
 
-# 10. Renovação
+## 8. Threeebs AI Integration
 
-Ao fim do período contratado, a Threeebs pode sugerir renovação.
+### Inteligência artificial integrada aos sistemas existentes
 
-```text
-Fim do período
-    ↓
-Threeebs apresenta continuidade
-    ↓
-Cliente decide
-```
+Produto voltado a empresas que já possuem sistemas e desejam adicionar IA, automação e integrações sem reconstruir toda a infraestrutura.
 
-A renovação não precisa acontecer automaticamente.
+### Sistemas possíveis
 
-O objetivo é manter o cliente com clareza sobre suas opções.
-
----
-
-# 11. Pequenos ajustes
-
-Durante o período contratado, alguns pequenos ajustes podem estar incluídos.
-
-Modelo inicial:
-
-```text
-3 meses  → até 3 pequenos ajustes
-6 meses  → até 6 pequenos ajustes
-12 meses → até 12 pequenos ajustes
-```
-
-Os ajustes podem ser acumulados dentro do período contratado.
-
-## Exemplos de pequeno ajuste
-
-- troca de texto;
-- troca de imagem;
-- alteração de link;
-- atualização de contato;
-- pequena mudança visual;
-- correção simples.
-
-## Não é considerado pequeno ajuste
-
-- nova página;
-- nova funcionalidade;
-- reformulação completa;
-- novo layout;
-- integração;
-- painel;
+- ERP;
+- CRM;
+- e-commerce;
+- SaaS;
+- sistema próprio;
 - banco de dados;
-- automação.
+- portal interno;
+- sistema legado;
+- API externa.
 
-Esses casos podem gerar uma nova etapa de projeto ou orçamento adicional.
+### Componentes possíveis
+
+- API;
+- webhooks;
+- automações;
+- agentes;
+- banco de dados;
+- integrações externas;
+- autenticação;
+- logs.
+
+O MCP é opcional e passa a ser necessário quando agentes externos precisam executar diretamente ferramentas da empresa.
+
+### Ideal para
+
+Empresas que querem adicionar inteligência artificial aos sistemas e fluxos que já utilizam.
 
 ---
 
-# 12. Evoluções opcionais
+## 9. Threeebs AI Dev
 
-A Threeebs pode propor melhorias mesmo quando o cliente não solicita diretamente.
+### Desenvolvimento de software integrado à inteligência artificial
 
-Exemplo:
+Produto voltado a empresas e equipes que desejam utilizar agentes de IA como parte do fluxo de desenvolvimento.
+
+### Fluxo possível
 
 ```text
-Natal se aproxima
+Pessoa ou equipe
       ↓
-Threeebs cria proposta visual
+ChatGPT / Codex
       ↓
-Cliente avalia
+GitHub
       ↓
-Se aprovar
+Threeebs
       ↓
-implementação adicional
+Sandbox e preview
+      ↓
+Produção
 ```
 
-Isso permite que a Threeebs participe de forma proativa da evolução do projeto.
+### Componentes possíveis
 
-A implementação pode ser oferecida como serviço adicional.
+- repositório GitHub;
+- estrutura padrão Threeebs;
+- documentação para pessoas e agentes;
+- ambiente Sandbox;
+- banco de dados;
+- preview;
+- deploy;
+- histórico e logs;
+- rollback;
+- agente do projeto;
+- extensão Threeebs;
+- integração MCP.
+
+O MCP é opcional, mas pode ser recomendado quando o cliente deseja executar operações do projeto por meio de agentes compatíveis.
+
+### Ideal para
+
+Empresas e equipes de desenvolvimento que desejam conectar IA, GitHub, ambientes, banco de dados e publicação em um único fluxo.
 
 ---
 
-# 13. Domínio e subdomínio
+## 10. Resumo dos produtos
 
-Projetos podem utilizar endereços da Threeebs ou domínio próprio.
-
-Exemplo de subdomínio:
-
-```text
-projeto.3eb.site
-```
-
-Exemplo de domínio próprio:
-
-```text
-projeto.com.br
-```
-
-O catálogo não precisa fixar preços relacionados a domínio ou subdomínio.
-
-Essas condições podem variar conforme o serviço contratado.
+| Produto | API | MCP | Extensão | Agente/IA | Objetivo principal |
+| --- | --- | --- | --- | --- | --- |
+| Desenvolvimento de websites | Quando necessário | Opcional | Não obrigatória | Opcional | Criar uma presença digital estática ou dinâmica |
+| API com MCP | Sim | Sim | Não obrigatória | Sim | Disponibilizar ferramentas da empresa para agentes |
+| App/Plugin oficial ChatGPT | Sim | Sim | Não obrigatória | Sim | Operar sistemas da empresa dentro do ChatGPT |
+| Extensão Navegador App | Sim | Opcional | Sim | Opcional | Levar ferramentas da empresa para o navegador |
+| Threeebs AI Assistant | Sim | Opcional | Opcional | Sim | Criar um assistente próprio para a empresa |
+| Threeebs AI Integration | Sim | Opcional | Não obrigatória | Sim | Integrar IA aos sistemas existentes |
+| Threeebs AI Dev | Sim | Opcional ou recomendado | Opcional | Sim | Desenvolver software com IA integrada ao fluxo |
 
 ---
 
-# 14. Diagnóstico Técnico-Estratégico
+## 11. Infraestrutura interna
 
-O Diagnóstico Técnico-Estratégico também faz parte do catálogo de ofertas da Threeebs.
-
-Ele pode funcionar:
-
-- como etapa gratuita de descoberta;
-- como análise aprofundada;
-- como produto independente;
-- como preparação para projetos dinâmicos.
+Os produtos podem reutilizar componentes internos da Threeebs:
 
 ```text
-Ideia
-  ↓
-Diagnóstico
-  ↓
-Documentação
-  ↓
-Arquitetura
-  ↓
-Decisão
+Threeebs Core API
+Threeebs Auth
+Threeebs MCP
+Threeebs Agents
+Threeebs Extensions
+Threeebs Automations
+Threeebs GitHub
+Threeebs Cloud
 ```
+
+Esses componentes sustentam as soluções. Eles não precisam ser apresentados ou contratados como produtos separados.
 
 ---
 
-# 15. Escada de evolução
+## 12. Interesse e definição do projeto
 
-O catálogo inicial pode ser compreendido como uma escada.
+Nesta fase, o catálogo público não apresenta valores fixos.
+
+Os valores dependem do produto, do período, da necessidade, das integrações e da infraestrutura envolvida. O primeiro passo comercial é registrar o interesse e compreender o contexto da empresa.
 
 ```text
-PLANO 1
-Até 3 páginas estáticas
-        ↓
-
-PLANO 2
-Até 10 páginas estáticas
-+ formulário simples
-        ↓
-
-PLANO 3
-Até 15 páginas
-+ banco de dados
-+ estrutura dinâmica
-+ expansão por escopo
+Interesse
+   ↓
+Entendimento da necessidade
+   ↓
+Diagnóstico quando necessário
+   ↓
+Definição da solução
+   ↓
+Proposta
 ```
 
-O objetivo não é obrigar o cliente a subir de plano.
-
-É permitir que o projeto tenha um caminho claro de crescimento.
+Nenhum componente listado como possível deve ser entendido como inclusão automática. O escopo é definido conforme a necessidade de cada projeto.
 
 ---
 
-# 16. Princípio comercial
+## 13. Síntese
 
-Os planos mais simples devem continuar simples.
+> **A Threeebs combina software, inteligência artificial e infraestrutura para entregar soluções completas. O cliente escolhe o resultado que precisa; a Threeebs organiza os componentes técnicos necessários para colocá-lo em operação.**
 
-```text
-Plano 1
-→ escopo fechado
-
-Plano 2
-→ escopo fechado
-
-Plano 3
-→ base definida + escopo variável
-```
-
-Isso permite que a Threeebs mantenha velocidade nos projetos de entrada e flexibilidade nos projetos mais complexos.
-
----
-
-# 17. O que ainda será definido
-
-Este catálogo é uma primeira versão.
-
-Ainda serão definidos posteriormente:
-
-```text
-→ nomes finais dos planos
-→ valores
-→ condições comerciais
-→ descontos por período
-→ regras de parcelamento
-→ custos de domínio
-→ custos de infraestrutura dedicada
-→ limites técnicos
-→ adicionais
-→ política de upgrade
-→ política de downgrade
-```
-
-Essas definições não precisam fazer parte da documentação pública inicial.
-
----
-
-# 18. Síntese
-
-```text
-THREEEBS :3 — CATÁLOGO INICIAL
-
-Plano 1
-└── até 3 páginas estáticas
-
-Plano 2
-└── até 10 páginas estáticas
-    + formulário simples
-
-Plano 3
-└── até 15 páginas
-    + banco de dados
-    + sistema dinâmico
-    + escopo variável
-
-Infraestrutura padrão
-└── Threeebs compartilhada
-
-Infraestrutura dedicada
-└── quando necessário
-
-Diagnóstico
-└── produto transversal
-```
-
-> **A Threeebs começa simples quando o projeto pede simplicidade e amplia a estrutura quando o projeto pede evolução.**
