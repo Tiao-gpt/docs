@@ -73,7 +73,7 @@ Para entender essa estrutura, consulte:
 
 - [Produto e formalização inicial](docs/produto/produto-formalizacao-inicial.md) — definição geral do produto e de sua evolução.
 - [Como funciona](docs/produto/como-funciona.md) — visão prática da construção de um projeto.
-- [Catálogo público inicial](docs/produto/catalogo-publico-inicial.md) — estrutura inicial de planos e ofertas.
+- [Catálogo público de produtos](docs/produto/catalogo-publico-inicial.md) — linha atual de soluções e seus usos.
 - [Princípios de projeto](docs/produto/principios-de-projeto.md) — critérios que orientam decisões e desenvolvimento.
 - [Diagnóstico Técnico-Estratégico](docs/produto/diagnostico-tecnico-estrategico.md) — análise e formalização de projetos.
 - [Modelos de relação](docs/produto/modelos-de-relacao.md) — prestação de serviço, parceria e sociedade.
